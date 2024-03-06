@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirect all versions to non-www with SSL (HTTPS)
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://unitconverter.website%{REQUEST_URI} [R=301,L,NE]
+
+# Redirect from /blog/default.html to /blog/
+RewriteCond %{REQUEST_URI} ^/blog/default\.html$
+RewriteRule ^default\.html$ /blog/ [R=301,L]
+
+# Set default.html as the directory index for /blog/
+DirectoryIndex default.html

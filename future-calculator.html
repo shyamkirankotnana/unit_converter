@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value Calculator - UnitConverter.website</title>
+    <meta name="description"
+        content="Calculate the future value of your investments with our easy-to-use Future Value Calculator.">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "FinancialProduct",
+          "name": "Future Value Calculator",
+          "description": "Calculate the future value of your investments with our easy-to-use Future Value Calculator.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          },
+          "brand": {
+            "@type": "Brand",
+            "name": "UnitConverter.website",
+            "logo": "https://unitconverter.website/img/logo.png"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "190"
+          }
+        }
+        </script>
+</head>
+
+<body>
+
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/img/logo.png" alt="Logo">
+                </div>
+                <div class="hamburger-menu">
+                    <span class="hamburger-icon">&#9776;</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Basic Measurements</a>
+                        <ul>
+                            <li><a href="area-converter.html">Area Converter</a></li>
+                            <li><a href="length-converter.html">Length Converter</a></li>
+                            <li><a href="mass-converter.html">Mass Converter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Scientific Units</a>
+                        <ul>
+                            <li><a href="pressure-converter.html">Pressure Converter</a></li>
+                            <li><a href="temperature-converter.html">Temperature Converter</a></li>
+                            <li><a href="energy-converter.html">Energy Converter</a></li>
+                            <li><a href="power-converter.html">Power Converter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Engineering Tools</a>
+                        <ul>
+                            <li><a href="force-converter.html">Force Converter</a></li>
+                            <li><a href="torque-converter.html">Torque Converter</a></li>
+                            <li><a href="density-mass-capacity-converter.html">Density & Mass Capacity Converter</a>
+                            </li>
+                            <li><a href="acceleration-converter.html">Acceleration Converter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Specialized Conversions</a>
+                        <ul>
+                            <li><a href="electric-charge-converter.html">Electric Charge Converter</a></li>
+                            <li><a href="illuminance-converter.html">Illuminance Converter</a></li>
+                            <li><a href="viscosity-converter.html">Viscosity Converter</a></li>
+                            <li><a href="capacitance-converter.html">Capacitance Converter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Miscellaneous</a>
+                        <ul>
+                            <li><a href="volume-capacity-converter.html">Volume & Capacity Converter</a></li>
+                            <li><a href="time-converter.html">Time Converter</a></li>
+                            <li><a href="velocity-speed-converter.html">Velocity & Speed Converter</a></li>
+                            <li><a href="volume-flow-converter.html">Volume Flow Converter</a></li>
+                            <li><a href="angle-converter.html">Angle Converter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-wrap">
+        <div class="container">
+            <h1>Compound Interest Based Future Value Calculator</h1>
+            <div class="converter">
+                <form name="homeForm" action="JavaScript:docalc()" method="post">
+                    <div>
+                        <label>Current Principal</label>
+                        <input type="text" name="p">
+                    </div>
+                    <div>
+                        <label>Annual Addition</label>
+                        <input type="text" name="c">
+                    </div>
+                    <div>
+                        <label>Years to Grow</label>
+                        <input type="text" name="y">
+                    </div>
+                    <div>
+                        <label>Growth Rate (%)</label>
+                        <input type="text" name="r">
+                    </div>
+                    <button type="submit" class="converter button">Calculate</button>
+                    <div id="result">
+                        <label>Future Value</label>
+                        <input type="text" name="fv" READONLY>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+<li><a href="blog/">Blog</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/future-value-calculator.js"></script>
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP276G8N0T"></script> <script>  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());   gtag('config', 'G-PP276G8N0T'); </script> 
+ </body>
+
+</html>

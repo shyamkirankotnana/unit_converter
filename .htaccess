@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Force HTTPS and non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [OR,NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://unitconverter.website%{REQUEST_URI} [R=301,L]
+
+# Redirect from index.html to root
+RewriteCond %{THE_REQUEST} /index\.html\s [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Add similar rules for the /blog/ directory if needed
+
