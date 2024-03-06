@@ -8,656 +8,693 @@ html, body {
 }*/
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Make sure body takes at least the viewport height */
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure body takes at least the viewport height */
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-
 header {
-    background-color: #263238;
-    color: white;
-    text-align: right;
-    padding: 0.5em 0;
-    background-color: var(--secondary-color); 
+  background-color: #263238;
+  color: white;
+  text-align: right;
+  padding: 0.5em 0;
+  background-color: var(--secondary-color);
 
-
-    padding: 10px 20px; /* Reduced padding */
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space out logo and nav */
+  padding: 10px 20px; /* Reduced padding */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out logo and nav */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 nav ul li {
-    display: inline-block;
-    position: relative;
-    margin-right: 20px;
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  white-space: nowrap;
 }
 
 nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #263238;
-    min-width: 200px;
-    right: 0;
+  display: none;
+  position: absolute;
+  background-color: #263238;
+  min-width: 200px;
+  right: 0;
 }
 
 nav ul li:hover ul {
-    display: block;
+  display: block;
 }
 
 nav ul li ul li {
-    display: block;
-    white-space: nowrap;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  display: block;
+  white-space: nowrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .main {
-    text-align: center;
-    padding: 20px;
-    flex: 1; /* Allows main content to expand */
+  text-align: center;
+  padding: 20px;
+  flex: 1; /* Allows main content to expand */
 }
 
 .card {
-    background-color: white;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    padding: 20px;
-    border-radius: 4px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .sections-row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin: 20px 0;
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 20px 0;
 }
 
 .section-card {
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 18%;
-    text-align: center;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 10px;
+  padding: 20px;
+  width: 18%;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
 }
 
 .section-card:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .tool-button {
-    display: block;
-    margin: 5px 0;
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: background-color 0.2s;
+  display: block;
+  font-family: Roboto;
+  margin: 5px 0;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
 }
 
 .tool-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 footer {
-    background-color: #263238;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+  background-color: #263238;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
 }
 
 footer ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 footer ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* Header Content Styles */
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Logo Styles */
 .logo img {
- max-height: 50px; /* Adjust logo size */
-    margin-right: 20px; /* Add some space between logo and nav */
+  max-height: 50px; /* Adjust logo size */
+  margin-right: 20px; /* Add some space between logo and nav */
 }
 
 /* Hamburger Menu Styles */
 .hamburger-menu {
-    display: none; /* Hide by default */
-    cursor: pointer;
-    font-size: 30px;
-    /* padding: 10px;*/
+  display: none; /* Hide by default */
+  cursor: pointer;
+  font-size: 30px;
+  /* padding: 10px;*/
 }
 
 /* Submenu Styles */
 nav ul li ul {
-    background-color: #32414B; /* Slightly darker than main menu */
-    padding: 5px 0; /* Adds padding around submenu items */
+  background-color: #32414b; /* Slightly darker than main menu */
+  padding: 5px 0; /* Adds padding around submenu items */
 }
 
 nav ul li ul li {
-    padding-left: 20px; /* Indent submenu items */
+  padding-left: 20px; /* Indent submenu items */
 }
 
 nav ul li ul li a {
-    font-size: 16px; /* Smaller font size for submenu items */
-    color: #f7f58d; /* Lighter color for submenu text */
+  font-size: 16px; /* Smaller font size for submenu items */
+  color: #f7f58d; /* Lighter color for submenu text */
 }
 
 nav ul li ul li a:hover {
-    color: #FFFFFF; /* Brighter color on hover */
+  color: #ffffff; /* Brighter color on hover */
 }
-
 
 /* FAQ Section Styles */
 .faq-section {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-section h2 {
-    color: #2a71d0;
-    text-align: center;
-    margin-bottom: 20px;
+  color: #2a71d0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .faq-section h3 {
-    color: #1a5276;
-    margin-top: 20px;
+  color: #1a5276;
+  margin-top: 20px;
 }
 
 .faq-section p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .faq-section p strong em {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 .faq-section a {
-    color: #2980b9;
-    text-decoration: none;
+  color: #2980b9;
+  text-decoration: none;
 }
 
 .faq-section a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .introduction {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 .introduction h1 {
-    color: #2a71d0;
-    text-align: center;
+  color: #2a71d0;
+  text-align: center;
 }
 
 .introduction h2 {
-    color: #1a5276;
-    margin-top: 15px;
+  color: #1a5276;
+  margin-top: 15px;
 }
 
 .introduction p {
-    text-align: justify;
-    line-height: 1.6;
-    margin-top: 10px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 .introduction a {
-    color: #2980b9;
-    text-decoration: none;
+  color: #2980b9;
+  text-decoration: none;
 }
 
 .introduction a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    /* Adjustments for tablets and smaller devices */
-    nav ul, nav ul li {
-        display: block;
-        text-align: center;
-    }
+  /* Adjustments for tablets and smaller devices */
+  nav ul,
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
 
-    .sections-row {
-        flex-direction: column;
-    }
+  .sections-row {
+    flex-direction: column;
+  }
 
-    .section-card {
-        width: auto; /* Full width on smaller screens */
-        margin: 10px;
-    }
+  .section-card {
+    width: auto; /* Full width on smaller screens */
+    margin: 10px;
+  }
 
-    .main, .card {
-        width: 95%; /* Slightly smaller width for better edge spacing */
-    }
+  .main,
+  .card {
+    width: 95%; /* Slightly smaller width for better edge spacing */
+  }
 
-    .hamburger-menu {
-        display: block; /* Show only on mobile devices */
-    }
+  .hamburger-menu {
+    display: block; /* Show only on mobile devices */
+  }
 
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off the screen */
+    height: 100%;
+    width: 100%;
+    background-color: #263238;
+    transition: right 0.3s;
+  }
 
-    nav {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Start off the screen */
-        height: 100%;
-        width: 100%;
-        background-color: #263238;
-        transition: right 0.3s;
-    }
+  nav.active {
+    right: 0; /* Slide in */
+  }
 
-    nav.active {
-        right: 0; /* Slide in */
-    }
+  nav.active ul {
+    display: flex; /* Show menu when active */
+  }
 
-    nav.active ul {
-        display: flex; /* Show menu when active */
-    }
+  nav ul {
+    display: none; /* Hide the regular menu on mobile */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width */
+    padding-top: 60px; /* Adjust as needed */
+    text-align: left;
+  }
 
-    nav ul {
-        display: none; /* Hide the regular menu on mobile */
-        flex-direction: column; /* Stack menu items vertically */
-        width: 100%; /* Full width */
-        padding-top: 60px; /* Adjust as needed */
-        text-align: left;
-    }
+  nav ul li {
+    display: block; /* Stack list items */
+    margin-bottom: 10px;
+  }
 
-    nav ul li {
-        display: block; /* Stack list items */
-        margin-bottom: 10px;
-    }
+  nav ul li ul {
+    display: none;
+    position: static;
+    background-color: transparent;
+    padding-left: 20px;
+  }
 
-    nav ul li ul {
-        display: none;
-        position: static;
-        background-color: transparent;
-        padding-left: 20px;
-    }
+  nav ul li:hover ul {
+    display: block;
+  }
+  nav ul li ul li a {
+    font-size: 13px; /* Smaller font size for submenu items */
+    color: #f7f58d; /* Lighter color for submenu text */
+  }
 
-    nav ul li:hover ul {
-        display: block;
-    }
-    nav ul li ul li a {
-        font-size: 13px; /* Smaller font size for submenu items */
-        color: #f7f58d; /* Lighter color for submenu text */
-    }
+  .container {
+    width: 100%;
+  }
 
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: left;
+    font-size: 11px;
+  }
 
-    .container {
-        width: 100%;
-    }
+  .sections-row,
+  .converter {
+    flex-direction: column;
+  }
 
-    table, th, td {
-        border: 1px solid #ddd;
-        padding: 2px;
-        text-align: left;
-        font-size: 11px;
-    }
+  .section-card,
+  .converter input,
+  .converter select,
+  .converter button {
+    width: 100%;
+  }
 
-    .sections-row, .converter {
-        flex-direction: column;
-    }
+  .faq-section {
+    padding: 15px;
+    margin: 10px;
+  }
 
-    .section-card, .converter input, .converter select, .converter button {
-        width: 100%;
-    }
+  .faq-section h2 {
+    font-size: 1.5em;
+  }
 
-    .faq-section {
-        padding: 15px;
-        margin: 10px;
-    }
+  .faq-section h3 {
+    font-size: 1.2em;
+  }
 
-    .faq-section h2 {
-        font-size: 1.5em;
-    }
+  .introduction {
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
 
-    .faq-section h3 {
-        font-size: 1.2em;
-    }
+  .introduction h1 {
+    font-size: 1.5em; /* Slightly smaller font size for better readability */
+  }
 
-    .introduction {
-        padding: 15px;
-        margin: 10px;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    }
+  .introduction h2 {
+    font-size: 1.3em;
+  }
 
-    .introduction h1 {
-        font-size: 1.5em; /* Slightly smaller font size for better readability */
-    }
-
-    .introduction h2 {
-        font-size: 1.3em;
-    }
-
-    .introduction p {
-        font-size: 0.9em; /* Adjust font size for paragraph text */
-    }
+  .introduction p {
+    font-size: 0.9em; /* Adjust font size for paragraph text */
+  }
 }
 
-
 @media screen and (max-width: 480px) {
-    /* Adjustments for mobile phones */
-    nav ul li {
-        margin-bottom: 10px;
-    }
+  /* Adjustments for mobile phones */
 
-    nav ul li a {
-        font-size: 14px; /* Smaller font size for mobile */
-    }
+  /* Done by rr */
+  .sections-row {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
 
-    header {
-        padding: 0.5em; /* Reduced padding for header */
-    }
+  /* end by rr */
+  nav ul li {
+    margin-bottom: 10px;
+  }
 
-    .tool-button {
-        padding: 6px 10px; /* Smaller buttons on mobile */
-    }
+  nav ul li a {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
 
-    .introduction {
-        padding: 10px;
-        margin: 5px;
-    }
+  header {
+    padding: 0.5em; /* Reduced padding for header */
+  }
 
-    .introduction h1 {
-        font-size: 1.4em;
-    }
+  .tool-button {
+    padding: 6px 10px; /* Smaller buttons on mobile */
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
 
-    .introduction h2 {
-        font-size: 1.2em;
-    }
+  .introduction {
+    padding: 10px;
+    margin: 5px;
+  }
 
-    .introduction p {
-        font-size: 0.85em;
-    }
+  .introduction h1 {
+    font-size: 1.4em;
+  }
 
-    .introduction a {
-        font-size: 0.85em; /* Adjust link font size */
-    }
+  .introduction h2 {
+    font-size: 1.2em;
+  }
+
+  .introduction p {
+    font-size: 0.85em;
+  }
+
+  .introduction a {
+    font-size: 0.85em; /* Adjust link font size */
+  }
 }
 
 .container {
-    background-color: white;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 50%;
-    margin: auto;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
-.converter label, .converter input, .converter select, .converter button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+.converter label,
+.converter input,
+.converter select,
+.converter button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.converter input[type="number"], .converter select, .converter button {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
+.converter input[type="number"],
+.converter select,
+.converter button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
 .converter button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .converter button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 #result {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 table th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 /* Add your existing styles here */
 
 /* Additional styles for time converter */
 .time-display {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
-
 
 /* Enhanced Color Scheme */
 :root {
-    --primary-color: #4a90e2; /* New primary color */
-    --secondary-color: #32414B;
-    --text-color: #333;
-    --background-color: #f5f5f5;
-    --link-color: #4a90e2;
-    --link-hover-color: #357abd;
+  --primary-color: #4a90e2; /* New primary color */
+  --secondary-color: #32414b;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --link-color: #4a90e2;
+  --link-hover-color: #357abd;
 }
 
-header, footer {
-    background-color: var(--secondary-color);
+header,
+footer {
+  background-color: var(--secondary-color);
 }
 
-nav ul li a, footer ul li a {
-    color: white;
+nav ul li a,
+footer ul li a {
+  color: white;
 }
 
-nav ul li a:hover, footer ul li a:hover {
-    color: var(--link-hover-color);
+nav ul li a:hover,
+footer ul li a:hover {
+  color: var(--link-hover-color);
 }
 
-.tool-button, .converter button {
-    background-color: var(--primary-color);
+.tool-button,
+.converter button {
+  background-color: var(--primary-color);
 }
 
-.tool-button:hover, .converter button:hover {
-    background-color: var(--link-hover-color);
+.tool-button:hover,
+.converter button:hover {
+  background-color: var(--link-hover-color);
 }
 
-
-
-h1, h2, h3 {
-    font-weight: normal;
-    color: var(--primary-color);
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  color: var(--primary-color);
 }
-
 
 /* Hover and Focus States */
-a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
-    opacity: 0.9;
+a:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  opacity: 0.9;
 }
 
-a:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus {
-    outline: 2px solid var(--primary-color);
+a:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline: 2px solid var(--primary-color);
 }
 
 /* Spacing and Layout Improvements */
-.section-card, .converter {
-    margin-bottom: 20px;
-    padding: 15px;
-    width: 88%;
+.section-card,
+.converter {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 88%;
 }
 
-
-
 nav {
-    display: flex;
-    align-items: center; /* Align nav items */
+  display: flex;
+  align-items: center; /* Align nav items */
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .content-wrap {
-    min-height: 100%;
-    /* Equal to footer height */
-    margin-bottom: -50px; 
-    flex: 1;
+  min-height: 100%;
+  /* Equal to footer height */
+  margin-bottom: -50px;
+  flex: 1;
 }
 
 .content-wrap:after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 }
 
-footer, .content-wrap:after {
-    height: 50px; /* Footer height */
+footer,
+.content-wrap:after {
+  height: 50px; /* Footer height */
 }
-
 
 /* Future Value Calculator Styles */
 .converter {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .converter label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.converter input[type="text"], .converter input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
+.converter input[type="text"],
+.converter input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
 .converter button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .converter button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 #result {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .converter {
-        width: 100%;
-        padding: 15px;
-    }
+  .converter {
+    width: 100%;
+    padding: 15px;
+  }
 
-    .converter input[type="text"], .converter input[type="number"], .converter button {
-        width: 100%;
-    }
+  .converter input[type="text"],
+  .converter input[type="number"],
+  .converter button {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .converter label {
-        font-size: 14px;
-    }
+  .converter label {
+    font-size: 14px;
+  }
 
-    .converter input[type="text"], .converter input[type="number"] {
-        font-size: 14px;
-    }
+  .converter input[type="text"],
+  .converter input[type="number"] {
+    font-size: 14px;
+  }
 
-    .converter button {
-        font-size: 14px;
-    }
+  .converter button {
+    font-size: 14px;
+  }
 }
 
 /* Add any additional styles you need here */
